@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <!-- Tailwind CSS CDN is included here for standalone viewing -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg">
+    <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+        <!-- The target="contentFrame" tells the link to load the page inside the iframe below -->
+        <a href="index.html" target="contentFrame" class="text-2xl font-bold rounded-lg hover:bg-blue-700 px-3 py-2 transition-colors duration-200">My Portfolio</a>
+        <div class="mt-4 md:mt-0 space-x-2 sm:space-x-4 flex flex-wrap justify-center">
+            <a href="index.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Home</a>
+            <a href="about.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">About</a>
+            <a href="projects.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Projects</a>
+            <a href="skills.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Skills</a>
+            <a href="contact.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Contact</a>
+        </div>
+    </nav>
+</header>
+<body class="bg-gray-100 text-gray-800 p-4">
+    <div class="bg-white p-8 rounded-lg shadow-md mb-8 mx-auto max-w-6xl">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">My Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Project 1: Image Showcase -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Responsive Landing Page</h3>
+                <img src="https://placehold.co/600x400/a0e7e7/000?text=Project+Image" alt="Responsive Landing Page Screenshot" class="w-full h-auto rounded-lg mb-4 border border-gray-200">
+                <p class="text-gray-700 mb-4">
+                    A modern, responsive landing page built with HTML and Tailwind CSS, demonstrating flexible layouts for various screen sizes.
+                </p>
+                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+                    View Project
+                </button>
+            </div>
+
+            <!-- Project 2: CSS Animation Example -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Interactive CSS Animation</h3>
+                <div class="flex justify-center items-center h-48 bg-gray-200 rounded-lg mb-4">
+                    <!-- The custom CSS for this animation is in style.css -->
+                    <div class="w-24 h-24 bg-purple-500 rounded-full animate-spin-slow flex items-center justify-center text-white text-xs">Loading...</div>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    An example of a custom CSS animation demonstrating smooth transitions and engaging visual effects.
+                </p>
+                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+                    View Project
+                </button>
+            </div>
+
+            <!-- Project 3: Video Integration -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Video Content Showcase</h3>
+                <video controls class="w-full h-auto rounded-lg mb-4 border border-gray-200 bg-black">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="text-gray-700 mb-4">
+                    A demonstration of embedding and styling video content within a web page for a rich user experience.
+                </p>
+                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+                    View Project
+                </button>
+            </div>
+
+            <!-- Project 4: Audio Integration -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Audio Feature Example</h3>
+                <audio controls class="w-full rounded-lg mb-4">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p class="text-gray-700 mb-4">
+                    Integrating an audio player for background music or spoken content, enhancing the site's interactivity.
+                </p>
+                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+                    View Project
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

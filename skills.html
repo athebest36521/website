@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - My Portfolio</title>
+    <!-- Tailwind CSS CDN is included here for standalone viewing -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg"></header>
+        <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <!-- The target="contentFrame" tells the link to load the page inside the iframe below -->
+            <a href="index.html" target="contentFrame" class="text-2xl font-bold rounded-lg hover:bg-blue-700 px-3 py-2 transition-colors duration-200">My Portfolio</a>
+            <div class="mt-4 md:mt-0 space-x-2 sm:space-x-4 flex flex-wrap justify-center">
+                <a href="index.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Home</a>
+                <a href="about.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">About</a>
+                <a href="projects.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Projects</a>
+                <a href="skills.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Skills</a>
+                <a href="contact.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Contact</a>
+            </div>
+        </nav>
+    </header></head>
+<body class="bg-gray-100 text-gray-800 p-4">
+    <div class="bg-white p-8 rounded-lg shadow-md mb-8 mx-auto max-w-4xl">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">My Skills</h2>
+        <div class="max-w-4xl mx-auto">
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                Here's a breakdown of the technical skills I've been developing through my coursework and personal projects.
+            </p>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Skill Area</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Specific Skills</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Proficiency</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Front-End Development</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">HTML5, CSS3, JavaScript (ES6+)</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Styling Frameworks</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Tailwind CSS, Bootstrap</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Version Control</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Git, GitHub</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Beginner-Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Design Tools</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Figma (basic), Wireframing</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Beginner</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Project Management</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Agile Methodologies (basic understanding)</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Beginner</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

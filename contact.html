@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Portfolio</title>
+    <!-- Tailwind CSS CDN is included here for standalone viewing -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg">
+    <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+        <!-- The target="contentFrame" tells the link to load the page inside the iframe below -->
+        <a href="index.html" target="contentFrame" class="text-2xl font-bold rounded-lg hover:bg-blue-700 px-3 py-2 transition-colors duration-200">My Portfolio</a>
+        <div class="mt-4 md:mt-0 space-x-2 sm:space-x-4 flex flex-wrap justify-center">
+            <a href="index.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Home</a>
+            <a href="about.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">About</a>
+            <a href="projects.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Projects</a>
+            <a href="skills.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Skills</a>
+            <a href="contact.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Contact</a>
+        </div>
+    </nav>
+</header>
+<body class="bg-gray-100 text-gray-800 p-4">
+    <div class="bg-white p-8 rounded-lg shadow-md mb-8 mx-auto max-w-lg">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Contact Me</h2>
+        <div class="max-w-lg mx-auto">
+            <p class="text-lg text-gray-700 leading-relaxed mb-6 text-center">
+                Have a question or want to collaborate? Feel free to reach out using the form below!
+            </p>
+            <form id="contactForm" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                    <input type="text" id="name" name="name" required
+                           class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm placeholder-gray-400"
+                           placeholder="Your Name">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" id="email" name="email" required
+                           class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm placeholder-gray-400"
+                           placeholder="your.email@example.com">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea id="message" name="message" rows="5" required
+                              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm placeholder-gray-400"
+                              placeholder="Your message..."></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+            <div id="formMessage" class="mt-4 p-3 text-center text-sm rounded-md" style="display:none;"></div>
+            <p class="mt-6 text-center text-gray-600 text-sm">
+                You can also find me on <a href="https://github.com/yourusername" target="_blank" class="text-blue-500 hover:underline">GitHub</a>.
+            </p>
+        </div>
+    </div>
+    <!-- Link to your external JavaScript file for form handling -->
+    <script src="script.js"></script>
+</body>
+</html>

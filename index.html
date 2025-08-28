@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Dev Portfolio</title>
+    <!-- Tailwind CSS CDN for utility classes (used for overall layout and basic styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to your external CSS file for custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header and Navigation Bar -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg">
+        <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <!-- The target="contentFrame" tells the link to load the page inside the iframe below -->
+            <a href="index.html" target="contentFrame" class="text-2xl font-bold rounded-lg hover:bg-blue-700 px-3 py-2 transition-colors duration-200">My Portfolio</a>
+            <div class="mt-4 md:mt-0 space-x-2 sm:space-x-4 flex flex-wrap justify-center">
+                <a href="index.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Home</a>
+                <a href="about.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">About</a>
+                <a href="projects.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Projects</a>
+                <a href="skills.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Skills</a>
+                <a href="contact.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto">
+        <body class="bg-gray-100 text-gray-800 p-4">
+            <div class="bg-white p-8 rounded-lg shadow-md mb-8 mx-auto max-w-4xl">
+                <h1 class="text-4xl font-extrabold text-gray-900 mb-4 text-center">Welcome to My Web Dev Portfolio!</h1>
+                <p class="text-lg text-gray-700 leading-relaxed text-center max-w-2xl mx-auto">
+                    Hi there! I'm a passionate web developer always eager to learn and create engaging digital experiences.
+                    This portfolio showcases some of my work, skills, and the journey I'm on in the exciting world of web development.
+                    Feel free to explore and get in touch!
+                </p>
+                <div class="mt-8 text-center">
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6 mt-auto shadow-inner">
+        <p>&copy; 2025 My Web Dev Portfolio. All rights reserved.</p>
+        <p class="mt-2 text-sm">Built with HTML, CSS (Tailwind CSS), and JavaScript.</p>
+    </footer>
+
+    <!-- Link to your external JavaScript file for dynamic behaviors -->
+    <script src="script.js"></script>
+</body>
+</html>

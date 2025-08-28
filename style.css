@@ -1,0 +1,46 @@
+/* General body and layout styling */
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the iframe that loads the page content */
+#contentFrame {
+    width: 100%;
+    flex-grow: 1;
+    border: none;
+    overflow-y: auto;
+    padding: 1rem 0; /* Add some vertical padding for content within the iframe */
+}
+
+/* Custom CSS for a simple animation, used on the projects page */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+    animation: spin 5s linear infinite;
+}
+
+/* Basic styling for content within pages, ensuring it looks good standalone and in iframe */
+.page-content-wrapper {
+    background-color: #ffffff; /* White background for content cards */
+    padding: 2rem; /* Ample padding */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Subtle shadow */
+    margin-bottom: 2rem; /* Space between sections */
+    max-width: 6xl; /* Max width to keep content readable */
+    margin-left: auto;
+    margin-right: auto;
+}

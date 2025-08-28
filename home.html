@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    <!-- Tailwind CSS CDN is included here to ensure styles apply within the iframe -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font is included here to ensure it loads within the iframe -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to your external CSS file for custom styles within the iframe -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-800 p-4">
+    <div class="bg-white p-8 rounded-lg shadow-md mb-8 mx-auto max-w-4xl">
+        <!-- Styled main title with a subtle gradient and increased size -->
+        <h1 class="text-5xl font-extrabold text-center mb-4
+                   bg-gradient-to-r from-blue-600 to-indigo-700 text-transparent bg-clip-text
+                   leading-tight tracking-tight">
+            Welcome to My Web Dev Portfolio!
+        </h1>
+        <!-- Paragraph text with improved line height for readability -->
+        <p class="text-lg text-gray-700 leading-normal text-center max-w-2xl mx-auto">
+            Hi there! I'm a passionate web developer always eager to learn and create engaging digital experiences.
+            This portfolio showcases some of my work, skills, and the journey I'm on in the exciting world of web development.
+            Feel free to explore and get in touch!
+        </p>
+        <div class="mt-8 text-center">
+            <!-- This button is wrapped in an <a> tag to ensure it functions as a proper link -->
+            <!-- 'target="contentFrame"' tells the link to load the page into the iframe in the parent document -->
+            <a href="projects.html" target="contentFrame" class="inline-block">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                    View My Projects
+                </button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

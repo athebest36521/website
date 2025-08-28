@@ -13,13 +13,14 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-    <!-- Header and Navigation Bar -->
+    <!-- Header and Navigation Bar (This is the ONLY place the navbar should be defined) -->
     <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg">
         <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
-            <!-- The target="contentFrame" tells the link to load the page inside the iframe below -->
-            <a href="index.html" target="contentFrame" class="text-2xl font-bold rounded-lg hover:bg-blue-700 px-3 py-2 transition-colors duration-200">My Portfolio</a>
+            <!-- Link for the main title, targets the iframe -->
+            <a href="home.html" target="contentFrame" class="text-2xl font-bold rounded-lg hover:bg-blue-700 px-3 py-2 transition-colors duration-200">My Portfolio</a>
             <div class="mt-4 md:mt-0 space-x-2 sm:space-x-4 flex flex-wrap justify-center">
-                <a href="index.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Home</a>
+                <!-- Link for the "Home" navigation item, targets the iframe -->
+                <a href="home.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Home</a>
                 <a href="about.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">About</a>
                 <a href="projects.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Projects</a>
                 <a href="skills.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Skills</a>
@@ -29,15 +30,10 @@
     </header>
 
     <main class="container mx-auto">
-        <body class="bg-gray-100 text-gray-800 p-4">
-            <div class="bg-white p-8 rounded-lg shadow-md mb-8 mx-auto max-w-4xl">
-                <h1 class="text-4xl font-extrabold text-gray-900 mb-4 text-center">Welcome to My Web Dev Portfolio!</h1>
-                <p class="text-lg text-gray-700 leading-relaxed text-center max-w-2xl mx-auto">
-                    Hi there! I'm a passionate web developer always eager to learn and create engaging digital experiences.
-                    This portfolio showcases some of my work, skills, and the journey I'm on in the exciting world of web development.
-                    Feel free to explore and get in touch!
-                </p>
-                <div class="mt-8 text-center">
+        <!-- This iframe will display the content of home.html, about.html, etc. -->
+        <!-- The 'name' attribute must match the 'target' in the navigation links -->
+        <!-- The 'src' attribute ensures home.html is loaded by default when index.html opens -->
+        <iframe id="contentFrame" name="contentFrame" src="home.html" title="Portfolio Content"></iframe>
     </main>
 
     <!-- Footer -->

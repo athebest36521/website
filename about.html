@@ -4,24 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - My Portfolio</title>
-    <!-- Tailwind CSS CDN is included here for standalone viewing -->
+    <!-- Tailwind CSS CDN is included here to ensure styles apply within the iframe -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font is included here to ensure it loads within the iframe -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to your external CSS file for custom styles within the iframe -->
     <link rel="stylesheet" href="style.css">
 </head>
-<header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg">
-    <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
-        <!-- The target="contentFrame" tells the link to load the page inside the iframe below -->
-        <a href="index.html" target="contentFrame" class="text-2xl font-bold rounded-lg hover:bg-blue-700 px-3 py-2 transition-colors duration-200">My Portfolio</a>
-        <div class="mt-4 md:mt-0 space-x-2 sm:space-x-4 flex flex-wrap justify-center">
-            <a href="index.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Home</a>
-            <a href="about.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">About</a>
-            <a href="projects.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Projects</a>
-            <a href="skills.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Skills</a>
-            <a href="contact.html" target="contentFrame" class="px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Contact</a>
-        </div>
-    </nav>
-</header>
 <body class="bg-gray-100 text-gray-800 p-4">
     <div class="bg-white p-8 rounded-lg shadow-md mb-8 mx-auto max-w-4xl">
         <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">About Me</h2>
@@ -36,10 +25,9 @@
                 When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good book. I'm always looking for opportunities to grow and collaborate with other developers.
             </p>
             <p>
-                Check out my <a href="https://www.linkedin.com/in/avyukt-tiwari-5899ab295/" target="_blank" class="text-blue-500 hover:underline">LinkedIn profile</a> for more professional details!
+                Check out my <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-blue-500 hover:underline">LinkedIn profile</a> for more professional details!
             </p>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
